@@ -17,7 +17,7 @@ yarn add @fluent/bundle project-fluent-loader
 ## Configuration
 default extension for project-fluent files is `.ftl`. We need to add only loader to webpack config:
 ```javascript
-/** @module webpack.config.js */
+/** @file webpack.config.js */
 
 module.exports = {
   module: {
@@ -35,9 +35,28 @@ module.exports = {
 Importing file returns default instanced of FluentResource from `@fluent/bundle`:
 
 ```javascript
-/** @module translation.ts */
+/** @file translation.ts */
 import enGB from './en-GB.ftl';
 
 export const l10n = new ReactLocalization();
 l10n.addBundle(enGB);
 ```
+
+## Typings
+Just add `"project-fluent-loader"` to `#compilerOptions.lib` array:
+```json
+/** @file tsconfig.json */
+{
+  ...
+  "compilerOptions": {
+    ...
+    "lib": [
+      ...
+      "project-fluent-loader"
+    ],
+    ...
+  },
+  ...
+}
+```
+Or if you prefer to use different file format use declaration from [this file](./module.d.ts).
