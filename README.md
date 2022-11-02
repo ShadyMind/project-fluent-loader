@@ -1,5 +1,7 @@
 # project-fluent-loader
 
+This loader is for [webpack](https://webpack.js.org/) and loads translation files for [project Fluent](https://projectfluent.org/). It have very simple and naive realization, but works well.
+
 ## Installation
 
 ### Via npm:
