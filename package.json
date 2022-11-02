@@ -12,6 +12,11 @@
     "i18n",
     "l10n"
   ],
+  "repository": {
+    "url": "https://github.com/ShadyMind/project-fluent-loader",
+    "type": "git"
+  },
+  "homepage": "https://github.com/ShadyMind/project-fluent-loader",
   "author": "Boris Astanin<boris.astanin@gmail.com>",
   "license": "MIT",
   "devDependencies": {
