@@ -1,6 +1,6 @@
 {
   "name": "project-fluent-loader",
-  "version": "0.0.1",
+  "version": "0.0.1-a",
   "description": "This loader is for webpack and loads translation files for project Fluent",
   "main": "project-fluent-loader.js",
   "typings": "./lib/module.d.ts",
