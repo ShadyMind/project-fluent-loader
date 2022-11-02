@@ -15,7 +15,7 @@ yarn add @fluent/bundle project-fluent-loader
 ```
 
 ## Configuration
-default extension for project-fluent files is `.ftl`. We need to add only loader to webpack config:
+default extension for project-fluent files is `.ftl`. I recommend to use it. In this case we need to add only loader to webpack config to work with this kind of files:
 ```javascript
 /** @file webpack.config.js */
 
@@ -43,20 +43,14 @@ l10n.addBundle(enGB);
 ```
 
 ## Typings
-Just add `"project-fluent-loader"` to `#compilerOptions.lib` array:
-```json
-/** @file tsconfig.json */
+Just add `"project-fluent-loader"` to `#compilerOptions.lib` array in your `tsconfig.json` config:
+```jsonc
 {
-  ...
   "compilerOptions": {
-    ...
     "lib": [
-      ...
       "project-fluent-loader"
-    ],
-    ...
-  },
-  ...
+    ]
+  }
 }
 ```
 Or if you prefer to use different file format use declaration from [this file](./module.d.ts).
